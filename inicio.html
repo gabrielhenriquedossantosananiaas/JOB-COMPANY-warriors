@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bungee", sans-serif;
+    font-weight: 10;
+    line-height: 1.7;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: transparent;
+    color: aliceblue;
+    list-style-type: disc;
+    width: 100%;
+    position: sticky;
+    position: relative;
+    height: 40%;
+    width: auto;
+    z-index: 100;
+}
+
+ header ul{
+
+display: flex;
+padding-top: 2%;
+padding-bottom: 2%;
+  display: flex;
+    align-items: center;
+    text-align: center;
+list-style-type: none;
+margin: 0 auto;
+
+ }
+
+
+
+ header ul li a{
+    font-size:150%;
+    list-style-type: none;
+padding-right: 25px;
+    margin-right: 10%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+   
+ }
+
+ b{
+    opacity: 0;
+ }
+
+
+ header ul li b:hover,
+ header ul li a:hover{
+    opacity: 1;
+    scale: 1.07;
+    color: rgb(192, 192, 192);
+ }
+
+
+/* FOTO PRINCIPAL(OLHO) */
+
+
+.fotoinicial
+{
+position: relative;
+height: 50%;
+width: 100%;
+z-index: 1;
+}   
+
+.fotoinicial video
+{
+position: relative;
+margin-top: -8%;
+height: 50%;
+width: 100%;
+z-index: 1;
+}   
+
+
+/* foto 'quem somos' */
+
+.quemsomos img{ 
+    margin-top: 0%;
+    margin-left: 35%;
+    height: 30%;
+    width: 30%;
+}
+
+/* apresentação */
+
+.texto1 p{ 
+  font-size: 160%;
+  color: white;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+.apresentacao img{ 
+    margin-top: 10%;
+    margin-left: 7.5%;
+    height: 85%;
+    width: 85%;
+}
+
+/* orc */
+
+.orc img{ 
+    margin-top: 7%;
+    margin-left: 7.5%;
+    height: 85%;
+    width: 85%;
+}
+
+.texto2 p{ 
+    font-size: 160%;
+  color: white;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+/* batalha epica */
+
+.dragao img{ 
+    margin-top: 7%;
+    margin-left: 7.5%;
+    height: 85%;
+    width: 85%;
+}
+
+.texto3 p{ 
+    font-size: 160%;
+  color: white;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    margin-top: 5%;
+    text-align: center;
+    padding: 1rem;
+ }
+
+</style>
+</head>
+<body>
+
+
+  <!--Cabeçalho-->
+  <center>
+  <header>   
+    
+
+    <ul>
+        <li><a href="">Início <b>⚔️</b> </a></li>
+
+        <li><a href="anemia.html">Anemia <b>⚔️</b> </a></li>
+
+        <li><a href="japa.html">Japa <b>⚔️</b> </a></li>
+
+        <li><a href="negrão.html">Negrão <b>⚔️</b></a></li>
+
+        <li><a href="lucas.html">Vilela<b>⚔️</b> </a></li>
+
+        <li><a href="sala.html">Sala<b>⚔️</b> </a></li>
+    </ul>
+    
+</header>
+</center>
+ <!--foto dos olhos com nois-->
+
+ <div class="fotoinicial" id="fotoinicial">
+ <video id="fotoinicial" autoplay loop muted>
+    <source src="img/foto animado.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos HTML5.
+  </video>
+</div>
+
+<script>
+  const video = document.getElementById('my-video');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="quemsomos">
+    <img src="img/quem somos.png" alt="">
+</div>
+
+ <!--primeira foto apresentando nos-->
+
+
+
+<div class="apresentacao">
+    <img src="img/apresentação.jpeg" alt="">
+</div>
+<div class="texto1">
+<p>
+    Nós, da Job Company, formamos uma equipe de 4 guerreiros destemidos. Em nossa jornada implacável, encaramos criaturas amedrontadoras que desafiam nossos limites. Armados não apenas com habilidades individuais, mas principalmente com o poder inabalável da amizade e do trabalho em equipe, transformamos cada desafio em uma oportunidade de crescimento e superação. <br> <br> <br>
+   Prepare-se para mergulhar em nossa história épica, onde o vínculo entre amigos se torna a base de nossa resistência contra as trevas. Cada batalha travada fortalece nossa determinação de alcançar novos horizontes e inspirar outros com nosso exemplo. Junte-se a nós enquanto continuamos a desbravar o desconhecido, prontos para enfrentar qualquer desafio que o destino nos reserve.
+</p>
+</div>
+
+ <!--demonstração de orc que batalhamos-->
+
+<div class="orc">
+    <img src="img/orc.jpeg" alt="">
+</div>
+
+<div class="texto2">
+    <p>
+        Temos vários tipos de inimigos, desde o imponente orc com seu machado trovejante até criaturas das profundezas com olhos que brilham com mistérios antigos. Cada confronto é um teste de nossa coragem e estratégia, onde a união dos nossos guerreiros se revela nossa maior vantagem.
+    </p>
+</div>
+
+ <!--a batalha mais epica contra o dragao-->
+
+<div class="dragao">
+    <img src="img/batalha contra dragao.jpeg" alt="">
+</div>
+
+<div class="texto3">
+    <p>
+        Até batalhas super épicas, sendo a mais marcante aquela em que enfrentamos um dragão de olhos vermelhos, cujo rugido ecoava pela terra como trovões de fogo. Esse foi um teste supremo de nossa coragem e estratégia, onde a união dos nossos guerreiros se revelou nossa maior vantagem. Em meio ao caos das chamas e do perigo iminente, descobrimos que juntos somos capazes de enfrentar qualquer desafio, não importa quão formidável seja o adversário.
+    </p>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 Jobcompany. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

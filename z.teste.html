@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+            cursor: none;
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: auto; /* Ajuste de acordo com o aspecto do vídeo */
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent; /* Pode ser usado para cobrir o vídeo */
+            z-index: 1; /* Coloque o overlay sobre o vídeo */
+        }
+
+        #video-ended-text {
+            display: none;
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container" id="video-container">
+        <video id="my-video" autoplay loop muted>
+          <source src="img/VIDEO INICIAL BADSS.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="overlay" id="overlay"></div>
+        <div id="video-ended-text">
+          O vídeo terminou. Seu texto aqui.
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('my-video');
+        const videoEndedText = document.getElementById('video-ended-text');
+
+        // Event listener para pausar o vídeo quando terminar
+        video.addEventListener('ended', () => {
+            // Pausa o vídeo
+            video.pause();
+
+            // Mostra o texto de finalização
+            videoEndedText.style.display = 'block';
+        });
+
+        // Event listener para verificar pressionamento da tecla "Enter"
+        document.addEventListener('keypress', function(event) {
+            // Verifica se a tecla pressionada é a tecla "Enter" (código 13)
+            if (event.keyCode === 13) {
+                // Redireciona para a página desejada
+                window.location.href = 'file:///C:/Users/minezin%20pe/Desktop/DIA%20DO%20AMIGO/inicio.html'; // Substitua pela URL desejada
+            }
+        });
+    </script>
+
+</body>
+</html>

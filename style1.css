@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url(1bae722ad3f8713275c947a411bdd584c5fbabe7_widexl.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: aliceblue;
+    list-style-type: disc;
+    width: 100%;
+    position: sticky;
+    position: relative;
+    height: 40%;
+    width: auto;
+
+}
+
+ header ul{
+display: flex;
+padding-top: 2%;
+padding-bottom: 2%;
+  display: flex;
+    align-items: center;
+    text-align: center;
+list-style-type: none;
+margin: 0 auto;
+
+ }
+
+
+
+ header ul li a{
+    font-size:150%;
+    list-style-type: none;
+padding-right: 25px;
+    margin-right: 10%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+color: rgb(255, 255, 255);
+
+ }
+
+ header ul li a:hover{
+    scale: 1.07;
+    color: rgb(192, 192, 192);
+ }
+
+ .flex{
+    display: flex;
+
+ }
+
+ /* qualidade */
+
+ .qualidades{
+    padding-left: 5%;
+border-radius: 15%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 55%;
+font-size: 250%;
+margin-left: 15%;
+background-color: wheat;
+width: 30%;
+ }
+
+
+  /* defeito */
+
+  .defeitos{
+width: 100%;
+    margin-left: -10%;
+    padding-left: 5%;
+border-radius: 15%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 55%;
+font-size: 250%;
+margin-left: 15%;
+background-color: wheat;
+width: 30%;
+ }
+
+ 
+ .txt{
+    margin-left: 20%;
+    font-size: 140%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+ }
+
+ .video{
+    margin-left: 30%;
+    
+ }
